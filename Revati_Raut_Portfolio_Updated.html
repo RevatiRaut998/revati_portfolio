@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Revati Raut | Front-End Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&amp;family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fdfcfa;
+      color: #222;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 10%;
+      background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header .intro {
+      max-width: 50%;
+      animation: slideInLeft 1.2s ease-out;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    header a.button {
+      display: inline-block;
+      background: #222;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    header a.button:hover {
+      background: #444;
+    }
+
+    header .photo {
+      width: 40%;
+      aspect-ratio: 1 / 1;
+      border-radius: 0.5rem;
+      background: #eee url('') center/cover no-repeat;
+      animation: slideInRight 1.2s ease-out;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      opacity: 0;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+      color: #222;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+    }
+
+    .experience, .project, .education, .skill-block {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      margin: 1.5rem 0;
+      transition: transform 0.3s ease;
+    }
+
+    .experience:hover, .project:hover, .education:hover, .skill-block:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+      }
+
+      header .intro, header .photo {
+        max-width: 100%;
+      }
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideInLeft {
+      0% { opacity: 0; transform: translateX(-50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes slideInRight {
+      0% { opacity: 0; transform: translateX(50px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="intro">
+<h1>Hi, I'm Revati</h1>
+<p>Front-End Developer with 3.5+ years of experience building responsive, scalable, and accessible web applications using Angular (v12+), TypeScript, and modern UI libraries. Proven success in improving performance and user engagement in Agile teams.</p>
+<a class="button" href="mailto:revatiraut9@gmail.com">Hire Me</a>
+</div>
+<div class="photo" style="background: #eee url('Photo.jpeg') center/cover no-repeat;"></div>
+</header>
+<section>
+<h2>About Me</h2>
+<p>Skilled in Angular 12+, ReactJS, TypeScript, HTML5, CSS3, and WCAG accessibility. Passionate about clean architecture, CI/CD integration, mentoring, and Agile practices.</p>
+</section>
+<section><h2>Work Experience</h2><div class="experience">
+<h3>Software Product and Platform Analyst – Accenture</h3>
+<p><strong>Apr 2021 – July 2024</strong>, Pune</p>
+<ul>
+<li>Developed scalable, accessible web applications using Angular 12+, TypeScript, HTML5, and CSS3, improving user engagement by 25%.</li>
+<li>Reduced task completion time by 30% through intuitive UI optimization and workflow redesign.</li>
+<li>Championed WCAG-compliant accessibility and led CI/CD implementation using Microsoft Azure in Agile sprints.</li>
+<li>Mentored junior developers, conducted peer code reviews, and drove maintainability through reusable components and refactoring.</li>
+<li>Collaborated cross-functionally on REST API integrations and contributed to sprint ceremonies.</li>
+<li>Achieved 90%+ unit test coverage with Jasmine and Karma; documented internal processes for future development.</li>
+</ul>
+</div><div class="experience">
+<h3>Project Consultant – CWPRS</h3>
+<p><strong>2020 – 2021</strong>, Pune</p>
+<ul>
+<li>Built responsive UI for data visualization tools.</li>
+<li>Reduced data input errors by 15% using form enhancements.</li>
+<li>Supported hydrological modeling automations.</li>
+</ul>
+</div></section>
+<section><h2>Projects</h2><div class="project"><h3>Angular Project Management Tool</h3><p>A full-featured Kanban-based project tracker with user roles and real-time updates. Tech: Angular, NgRx, Angular Material, Firebase. <a href="https://github.com/tomastrajan/angular-ngrx-material-starter">GitHub</a></p></div><div class="project"><h3>Angular Job Board App</h3><p>A job portal with role-based access, filtering, and resume upload features. Tech: Angular, Node.js, MongoDB, Bootstrap, RxJS. <a href="https://github.com/SaiAshish9/angular-job-board">GitHub</a></p></div><div class="project"><h3>Task Manager with NgRx</h3><p>Task productivity app using advanced state management and dynamic UI filtering. Tech: Angular, NgRx, SCSS, Angular CLI. <a href="https://github.com/btroncone/ngrx-examples">GitHub</a></p></div><div class="project"><h3>Responsive Developer Portfolio</h3><p>Portfolio template showcasing skills and blog posts in a clean, responsive layout. Tech: HTML5, CSS3, Bootstrap, JavaScript. <a href="https://startbootstrap.com/template/devfolio">Live Demo</a></p></div></section>
+<section>
+<h2>Education</h2>
+<div class="education">
+<h3>B.E. Civil Engineering</h3>
+<p>Pune University, 2015 – 2019</p>
+</div>
+</section>
+<section>
+<h2>Certifications &amp; Achievements</h2>
+<div class="education">
+<ul>
+<li><strong>Skills Star Award 2022</strong> – For applying new IT skills to drive business growth.</li>
+<li><strong>Growth Catalyst Award 2021</strong> – For adding client value in growth areas.</li>
+<li><strong>UiPath Certified Developer</strong> (in progress)</li>
+</ul>
+</div>
+</section>
+<footer>
+<p>Revati Raut • revatiraut9@gmail.com • <a href="https://linkedin.com/in/revati-raut-223016159" style="color:#fff;text-decoration:underline;">LinkedIn</a></p>
+<p>© 2025 Revati Raut. All rights reserved.</p>
+</footer>
+</body>
+</html>
